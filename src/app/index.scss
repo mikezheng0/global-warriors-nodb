@@ -19,6 +19,13 @@
        url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -46,6 +53,9 @@
 
 html {
   font-family: 'Roboto Slab', serif;
+}
+body{
+  background-color: #222222;
 }
 
 [layout=row] {
@@ -88,6 +98,45 @@ section.jumbotron {
       width: 100px;
     }
   }
+}
+
+.main-page{
+
+  .grey{
+    background-color: grey;
+  }
+  md-grid-list {
+    margin:40px auto 40px auto;
+    max-width:1200px;
+    max-height:800px;
+  }
+  img{
+    width:inherit;
+  }
+  md-grid-tile {
+    @include transition( all 400ms ease-out 50ms);
+  }
+  .img-tile{
+    background:url('../assets/images/global-card-img.jpg');
+    background-size: auto 100%;
+  }
+  .match-info figure{
+    background: #474747;
+    flex-direction:column;
+      h1{
+        color: #ededed;
+        margin:16px 16px;
+        text-align:center;
+      }
+
+    md-content{
+      background-color:transparent;
+      color:white;
+    }
+  }
+  background-color:rgb(23, 23, 23);
+  width:100%;
+
 }
 
 /**

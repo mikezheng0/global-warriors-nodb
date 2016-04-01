@@ -1,3 +1,4 @@
+
 .acme-navbar-text{
   color: white;
 }
@@ -14,4 +15,42 @@ h1 {
 
 a:hover, a:focus {
   color: greenyellow;
+}
+
+md-toolbar{
+  background-color: transparent !important;
+}
+header{
+  background-color: #232323;
+}
+
+#header-logo{
+  width:350px;
+}
+
+#header-top{
+  height:92px;
+  max-width:1400px;
+  margin:auto;
+  h2{
+    justify-content: flex-end;
+    align-items:flex-end;
+  }
+  a {
+    display: inline-block;
+    font-size:12px;
+    width:auto;
+  }
+  a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    @include transition(width .5s ease, background-color .5s ease);
+  }
+  a:hover:after {
+    width: 100%;
+    background: #ff806e;
+  }
 }

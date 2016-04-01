@@ -1,34 +1,29 @@
 <div layout="vertical" layout-fill>
 
-  <md-content>
+  <md-content class="main-page">
     <header>
       <acme-navbar creation-date="main.creationDate"></acme-navbar>
     </header>
 
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
-    </section>
+    <md-grid-list class="align-center"
+      md-cols-xs="1" md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6" md-cols-gt-lg="6"
+      md-row-height-gt-sm="200px" md-row-height="1:1"
+      md-gutter="0px" md-gutter-gt-sm="0px" >
+      <md-grid-tile class="img-tile"
+                    md-rowspan="4" md-colspan="4" md-colspan-sm="2" md-rowspan-sm="2" md-colspan-xs="1" md-rowspan-xs="1">
+        <md-grid-tile-footer>
+          <h3>This is a header for the featured event</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+      <md-grid-tile class="match-info"
+                    md-rowspan="4" md-colspan="2" md-rowspan-sm="1" md-colspan-sm="2" md-rowspan-xs="1" md-colspan-xs="2">
+        <h1 class="md-display-2">Get your tickets now!</h1>
+        <md-content flex layout-padding>
+        <p class="md-body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+        </md-content>
+      </md-grid-tile>
+    </md-grid-list>
 
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
-        </div>
-      </md-card>
-    </div>
   </md-content>
 
 </div>
