@@ -6,11 +6,11 @@
     </header>
 
     <md-grid-list class="align-center"
-      md-cols-xs="1" md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6" md-cols-gt-lg="6"
+      md-cols-xs="2" md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6" md-cols-gt-lg="6"
       md-row-height-gt-sm="200px" md-row-height="1:1"
       md-gutter="0px" md-gutter-gt-sm="0px" >
       <md-grid-tile class="img-tile"
-                    md-rowspan="4" md-colspan="4" md-colspan-sm="2" md-rowspan-sm="2" md-colspan-xs="1" md-rowspan-xs="1">
+                    md-rowspan="4" md-colspan="4" md-colspan-sm="2" md-rowspan-sm="2" md-colspan-xs="2" md-rowspan-xs="2">
         <md-grid-tile-footer>
           <h3>This is a header for the featured event</h3>
         </md-grid-tile-footer>
@@ -24,6 +24,60 @@
       </md-grid-tile>
     </md-grid-list>
 
+    <div class="fighter-card" layout="row" layout-sm="column" layout-align="center start">
+      <md-card class="left-card" flex layout="row">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Josh Hill</span>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Record: </span>
+              <span flex="50">13-1</span>
+            </span>
+            <md-divider md-inset></md-divider>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Weight: </span>
+              <span flex="50">135 lbs</span>
+            </span>
+            <md-divider md-inset></md-divider>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Height: </span>
+              <span flex="50">5'6"</span>
+            </span>
+            <span class="md-subhead" ></span>
+            <md-button>Learn More</md-button>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+          <div class="md-media-xl card-media" style='background:url("assets/images/josh-hill-card.png")no-repeat scroll center top/cover;'></div>
+        </md-card-content>
+      </md-card>
+      <div class="vs-symbol" hide-sm hide-xs>VS</div>
+      <md-card class="right-card" flex layout="row">
+        <md-card-content layout="row" layout-align="space-between">
+          <div class="md-media-xl card-media" style='background:url("assets/images/shane-campbell-card.png")no-repeat scroll center top/cover;'></div>
+        </md-card-content>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Shane Campbell</span>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Record: </span>
+              <span flex="50">13-4</span>
+            </span>
+            <md-divider md-inset></md-divider>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Weight: </span>
+              <span flex="50">155 lbs</span>
+            </span>
+            <md-divider md-inset></md-divider>
+            <span class="md-subhead" layout="row">
+              <span flex="50">Height: </span>
+              <span flex="50">6'0"</span>
+            </span>
+            <span class="md-subhead" ></span>
+            <md-button>Learn More</md-button>
+          </md-card-title-text>
+        </md-card-title>
+      </md-card>
+    </div>
   </md-content>
-
 </div>

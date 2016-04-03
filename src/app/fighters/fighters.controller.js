@@ -7,7 +7,6 @@
 
   /** @ngInject */
   function FighterController($scope, fighterData) {
-    var vm = this;
     $scope.fighters = fighterData.getFighters();
   }
 })();

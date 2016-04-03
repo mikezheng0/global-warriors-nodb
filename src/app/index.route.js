@@ -19,7 +19,13 @@
       templateUrl: 'app/fighters/fighters.html',
       controller: 'FighterController',
       controllerAs: 'fighter'
-    });
+      })
+      .state('events', {
+        url: '/events',
+        templateUrl: 'app/events/events.html',
+        controller: 'EventController',
+        controllerAs: 'event'
+      });
 
     $urlRouterProvider.otherwise('/');
   }

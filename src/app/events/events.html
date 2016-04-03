@@ -1,0 +1,57 @@
+<div layout="vertical" layout-fill>
+
+  <md-content class="main-page">
+    <header>
+      <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    </header>
+    <div class="event-content">
+      <md-card ng-repeat="i in [1,2,3,4,5]">
+        <md-card-header>
+          <md-card-header-text>
+            <span class="md-title">Saturday, May 16th, 2017 at 7:00PM</span>
+          </md-card-header-text>
+        </md-card-header>
+        <div layout="row">
+          <img flex ng-src="assets/images/this-guy.jpg" class="md-card-image" alt="This Guy">
+          <img flex ng-src="assets/images/other-guy.jpg" class="md-card-image" alt="Another Guy">
+        </div>
+
+        <md-card-title>
+          <md-card-title-text layout="row">
+            <span class="md-headline left-title" flex="45">Left Guy</span>
+            <span class="md-headline vs-title" flex="10">VS</span>
+            <span class="md-headline right-title" flex="45">Right Guy</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <div  layout="row">
+            <span class="md-headline middle-content" flex>5 Rounds, Featherweight</span>
+          </div>
+          <div  layout="row">
+            <span class="md-headline left-content" flex="40">13-2</span>
+            <span class="md-headline middle-content" flex="20">Records</span>
+            <span class="md-headline right-content" flex="40">13-1</span>
+          </div>
+          <md-divider></md-divider>
+          <div  layout="row">
+            <span class="md-headline left-content" flex="40">5'6"</span>
+            <span class="md-headline middle-content" flex="20">Height</span>
+            <span class="md-headline right-content" flex="40">5'8"</span>
+          </div>
+          <md-divider></md-divider>
+          <div  layout="row">
+            <span class="md-headline left-content" flex="40">140 lbs</span>
+            <span class="md-headline middle-content" flex="20">Weight</span>
+            <span class="md-headline right-content" flex="40">136 lbs</span>
+          </div>
+          <md-divider></md-divider>
+          <div  layout="row">
+            <span class="md-headline left-content" flex="40">Left Guy</span>
+            <span class="md-headline middle-content" flex="20">Nickname</span>
+            <span class="md-headline right-content" flex="40">Right Guy</span>
+          </div>
+        </md-card-content>
+      </md-card>
+    </div>
+  </md-content>
+</div>

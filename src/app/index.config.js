@@ -3,7 +3,8 @@
 
   angular
     .module('globalWarriorsNodb')
-    .config(config);
+    .config(config)
+    .config(configTheme);
 
   /** @ngInject */
   function config($logProvider, toastrConfig) {
@@ -19,3 +20,8 @@
   }
 
 })();
+
+  function configTheme($mdThemingProvider){
+      $mdThemingProvider.theme('default')
+        .dark();
+  }

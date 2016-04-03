@@ -17,27 +17,27 @@
         'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
-        'fighter':'Joel Powell',
-        'image':'assets/images/joel-powell.jpeg',
+        'fighter':'Josh Hill',
+        'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero Hill',
+        'fighter':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero Hill',
+        'fighter':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero Hill',
+        'fighter':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero Hill',
+        'fighter':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero Hill',
+        'fighter':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       }
