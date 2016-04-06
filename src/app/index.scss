@@ -55,7 +55,7 @@ $contrast-text: #b2b2b2;
 }
 
 html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Oswald', sans-serif;
 }
 body{
   background-color: #222222;
@@ -108,6 +108,25 @@ section.jumbotron {
 }
 
 .main-page{
+  .versus-logo{
+    p:first-of-type{
+      margin-top:60px;
+      font-size:180px;
+      margin-bottom:-55px;
+    }
+    p{
+      margin:0;
+      font-size:100px;
+      font-weight:700;
+      text-align:center;
+    }
+  }
+  md-card-content .md-headline{
+    font-weight:700;
+  }
+  .md-title{
+    font-weight: 400;
+  }
   .grey{
     background-color: grey;
   }
