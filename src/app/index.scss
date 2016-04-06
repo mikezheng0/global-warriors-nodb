@@ -108,6 +108,17 @@ section.jumbotron {
 }
 
 .main-page{
+  .event-content {
+    margin-top:0;
+    margin-bottom:0;
+    md-card{
+    margin:0;
+  }
+}
+  md-grid-list{
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+  }
   .versus-logo{
     p:first-of-type{
       margin-top:60px;
@@ -141,10 +152,21 @@ section.jumbotron {
   md-grid-tile {
     @include transition( all 400ms ease-out 50ms);
   }
+  .full-width{
+    width: 100%;
+    padding:0;
+    margin:0;
+    position: relative;
+  }
   .img-tile{
     background:url('../assets/images/global-card-img.jpg');
     background-size: auto 100%;
   }
+  //remove padding
+  md-list-item.md-no-proxy, md-list-item .md-no-style{
+    padding: 0;
+  }
+
   .match-info figure{
     background: $content-background-color;
     flex-direction:column;
