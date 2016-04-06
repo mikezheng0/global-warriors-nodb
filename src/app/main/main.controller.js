@@ -6,7 +6,8 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout) {
-    
+  function MainController($scope, fighterData) {
+      $scope.fighters = fighterData.getFighters();
   }
+  
 })();

@@ -7,37 +7,37 @@
 
   /** @ngInject */
   function fighterData() {
-    var data = [
+    var fighter = [
       {
-        'fighter':'Some Guy',
+        'name':'Some Guy',
         'image':'assets/images/some-guy.jpg',
         'blurb':'Some guy fights'
       },{
-        'fighter':'Josh Hill',
+        'name':'Josh Hill',
         'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
-        'fighter':'Josh Hill',
+        'name':'Josh Hill',
         'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero',
+        'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero',
+        'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero',
+        'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero',
+        'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
-        'fighter':'Will Romero',
+        'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       }
@@ -46,7 +46,7 @@
     this.getFighters = getFighters;
 
     function getFighters() {
-      return data;
+      return fighter;
     }
   }
 })();
