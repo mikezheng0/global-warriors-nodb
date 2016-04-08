@@ -9,34 +9,42 @@
   function fighterData() {
     var fighter = [
       {
-        'name':'Some Guy',
+        'id': 0,
+        'name':'Dave Hale',
         'image':'assets/images/some-guy.jpg',
         'blurb':'Some guy fights'
       },{
+        'id': 1,
         'name':'Josh Hill',
         'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
+        'id': 2,
         'name':'Josh Hill',
         'image':'assets/images/josh-hill.jpg',
         'blurb':''
       },{
+        'id': 3,
         'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
+        'id': 4,
         'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
+        'id': 5,
         'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
+        'id': 6,
         'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
       },{
+        'id': 7,
         'name':'Will Romero',
         'image':'assets/images/will-romero.jpg',
         'blurb':''
@@ -48,5 +56,6 @@
     function getFighters() {
       return fighter;
     }
+
   }
 })();
