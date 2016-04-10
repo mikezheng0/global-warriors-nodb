@@ -4,6 +4,7 @@
   <header>
     <acme-navbar creation-date="main.creationDate"></acme-navbar>
   </header>
+  <slide-menu></slide-menu>
   <md-grid-list class="align-center"
                 md-cols-xs="1" md-cols-sm="4" md-cols-md="6" md-cols-gt-md="9"
                 md-row-height-gt-sm="200px" md-row-height="1:1"
@@ -13,7 +14,7 @@
                   style="background:url({{fighter.image}}) no-repeat scroll center top/cover transparent;background-size:auto 100%;">
     </md-grid-tile>
     <md-grid-tile
-      md-rowspan="3" md-colspan="6" md-rowspan-sm="2" md-colspan-xs="1" md-rowspan-xs="1" class="fighter-info">
+      md-rowspan="3" md-colspan="6" md-rowspan-sm="2"  md-colspan-sm="2" md-colspan-xs="1" md-rowspan-xs="1" class="fighter-info">
       <div class="full-width" style = "border-bottom: 1px solid #222222; padding-bottom: 20px">
         <h5>Name:</h5>
         <h1>{{fighter.name}}</h1>
@@ -32,5 +33,6 @@
       </div>
     </md-grid-tile>
   </md-grid-list>
+  <footer-bar></footer-bar>
 </md-content>
 </div>
