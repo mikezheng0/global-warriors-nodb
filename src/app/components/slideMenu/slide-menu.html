@@ -3,12 +3,12 @@
     <h1 class="md-toolbar-tools">Menu</h1>
   </md-toolbar>
   <md-list>
-    <md-list-item href="/" ><p>Home</p></md-list-item>
-    <md-list-item href="#/fighters" ><p>Fighters</p></md-list-item>
-    <md-list-item href="#/events" ><p>Fight Cards</p></md-list-item>
-    <md-list-item href="#" ><p>Media</p></md-list-item>
-    <md-list-item href="#" ><p>Sponsors</p></md-list-item>
-    <md-list-item href="#" ><p>Tickets</p></md-list-item>
+    <md-list-item href="/" ng-click="vm.close();"><p>Home</p></md-list-item>
+    <md-list-item href="#/fighters" ng-click="vm.close();" ><p>Fighters</p></md-list-item>
+    <md-list-item href="#/events" ng-click="vm.close();" ><p>Fight Cards</p></md-list-item>
+    <md-list-item href="#" ng-click="vm.close();" ><p>Media</p></md-list-item>
+    <md-list-item href="#" ng-click="vm.close();" ><p>Sponsors</p></md-list-item>
+    <md-list-item href="#" ng-click="vm.close();" ><p>Tickets</p></md-list-item>
     <md-divider></md-divider>
     <md-list-item ng-click="vm.close()" class="md-primary">
       <p>Close</p>
