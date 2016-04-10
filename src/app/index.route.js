@@ -25,6 +25,12 @@
         templateUrl: 'app/events/events.html',
         controller: 'EventController',
         controllerAs: 'event'
+      })
+      .state('fighterDetails', {
+        url: '/fighters/:id',
+        templateUrl: 'app/fighter-details/fighter-details.html',
+        controller: 'FighterDetailsController',
+        controllerAs: 'fighter-details'
       });
 
     $urlRouterProvider.otherwise('/');
