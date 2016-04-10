@@ -1,17 +1,9 @@
 <div layout="vertical" layout-fill>
 
   <md-content class="main-page">
-    <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
     <slide-menu></slide-menu>
     <div class="event-content">
-      <md-card ng-repeat="i in [1,2,3,4,5]">
-        <md-card-header>
-          <md-card-header-text>
-            <span class="md-title">Saturday, May 16th, 2017 at 7:00PM</span>
-          </md-card-header-text>
-        </md-card-header>
+      <md-card ng-repeat="i in [1,2]">
         <div layout="row">
           <img flex ng-src="assets/images/this-guy.jpg" class="md-card-image" alt="This Guy">
           <img flex ng-src="assets/images/other-guy.jpg" class="md-card-image" alt="Another Guy">
