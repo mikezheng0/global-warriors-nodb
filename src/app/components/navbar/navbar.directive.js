@@ -30,7 +30,7 @@
 
       function openRightMenu() {
         $mdSidenav('right').toggle();
-      };
+      }
 
       // "vm.creationDate" is available by directive option "bindToController: true"
     }

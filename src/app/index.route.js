@@ -31,6 +31,12 @@
         templateUrl: 'app/fighter-details/fighter-details.html',
         controller: 'FighterDetailsController',
         controllerAs: 'fighter-details'
+      })
+      .state('media', {
+        url: '/media',
+        templateUrl: 'app/media/media.html',
+        controller: 'MediaController',
+        controllerAs: 'media'
       });
 
     $urlRouterProvider.otherwise('/');

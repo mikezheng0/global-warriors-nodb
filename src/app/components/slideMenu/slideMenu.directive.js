@@ -28,7 +28,7 @@
       /////////
       function close() {
         $mdSidenav('right').close()
-      };
+      }
     }
   }
 
