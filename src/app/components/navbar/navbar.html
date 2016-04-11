@@ -1,15 +1,19 @@
-<md-toolbar id="header-top" layout="row" layout-align="center center">
-  <span flex><img id="header-logo" src="assets/images/global-warriors-logo.png"/></span>
-  <h2 flex hide-sm hide-xs class="md-toolbar-tools md-toolbar-tools-bottom" >
-    <md-button href="/" class="md-primary">Home</md-button>
-    <md-button href="#/fighters" class="md-primary">Fighters</md-button>
-    <md-button href="#/events" class="md-primary">Fight Cards</md-button>
-    <md-button href="#/media" class="md-primary">Media</md-button>
-    <md-button href="#" class="md-primary">Sponsors</md-button>
-    <md-button href="#" class="md-primary">Tickets</md-button>
-  </h2>
-  <md-button hide-gt-sm ng-click="vm.openRightMenu()"
-             class="md-primary">
-    Menu
-  </md-button>
+<md-toolbar id="header-top" layout="column" layout-align="center center">
+  <div class="color-bar"></div>
+  <div flex layout="row" class="header-bar" >
+    <span flex><img id="header-logo" src="assets/images/global-warriors-logo.png"/></span>
+    <h2 flex hide-sm hide-xs class="md-toolbar-tools md-toolbar-tools-bottom" >
+      <md-button href="/" md-no-ink>Home</md-button>
+      <md-button href="#/fighters" md-no-ink>Fighters</md-button>
+      <md-button href="#/events" md-no-ink>Fight Cards</md-button>
+      <md-button href="#/media" md-no-ink>Media</md-button>
+      <md-button href="#" md-no-ink>Sponsors</md-button>
+      <md-button href="#" md-no-ink>Tickets</md-button>
+    </h2>
+    <md-button md-no-ink hide-gt-sm ng-click="vm.openRightMenu()"
+               class="menu-button">
+      Menu
+    </md-button>
+  </div>
+  <div flex></div>
 </md-toolbar>
