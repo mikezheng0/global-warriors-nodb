@@ -6,7 +6,7 @@
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function acmeNavbar($window) {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
@@ -15,13 +15,18 @@
       },
       controller: NavbarController,
       controllerAs: 'vm',
+      link: navbarResizer,
       bindToController: true
     };
 
     return directive;
 
+    function navbarResizer(scope, element, attrs) {
+
+    }
     /** @ngInject */
-    function NavbarController($mdSidenav) {
+    function NavbarController($mdSidenav, $scope) {
+    
       var vm = this;
 
       vm.openRightMenu = openRightMenu;
