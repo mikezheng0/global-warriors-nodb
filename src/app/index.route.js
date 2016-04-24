@@ -20,6 +20,12 @@
       controller: 'FighterController',
       controllerAs: 'fighter'
       })
+      .state('sponsors', {
+        url: '/sponsors',
+        templateUrl: 'app/sponsors/sponsors.html',
+        controller: 'SponsorController',
+        controllerAs: 'sponsor'
+      })
       .state('events', {
         url: '/events',
         templateUrl: 'app/events/events.html',

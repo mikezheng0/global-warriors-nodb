@@ -25,21 +25,21 @@
       },{
         'id': 2,
         'name':'Alex Ricci',
-        'image':'assets/images/josh-hill.jpg',
+        'image':'assets/images/alex-ricci.jpg',
         'height':'5\'10\"',
         'weight': '155lbs',
         'record': '9-3-0'
       },{
         'id': 3,
         'name':'Lyndon Whitlock',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/lyndon-whitlock.jpg',
         'height':'5\'7\"',
         'weight': '135lbs',
         'record': '10-5-0'
       },{
         'id': 4,
         'name':'Jonathan Brookins',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/Jonathan-Brookins.jpg',
         'height':'6\'0\"',
         'weight': '135lbs',
         'record': '15-7-0'
@@ -74,28 +74,28 @@
       },{
         'id': 9,
         'name':'Adam Assenza',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/adam-assenza.jpg',
         'height':'5\'7\"',
         'weight': '145lbs',
         'record': '6-3-0'
       },{
         'id': 10,
         'name':'TJ Laramie',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/tj-laramie.jpg',
         'height':'5\'7\"',
         'weight': '135lbs',
         'record': '2-0-0'
       },{
         'id': 11,
         'name':'Andrew Cseh',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/andrew-cseh.jpg',
         'height':'5\'6\"',
         'weight': '125lbs',
         'record': '7-5-0'
       },{
         'id': 12,
         'name':'Malcolm Gordon',
-        'image':'assets/images/will-romero.jpg',
+        'image':'assets/images/malcom-gordon.jpg',
         'height':'5\'7\"',
         'weight': '125lbs',
         'record': '6-2-0'
