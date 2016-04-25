@@ -1,8 +1,13 @@
 #countdown-container{
+  margin-top: -20px;
   color: white;
-  margin-top:7px;
-  background-color: #cf171f;
+  width: 300px;
+  margin: 0 auto 7px auto;
+  background-color: none;
   div[flex]{
+    color: #c8a53b;
     text-align: center;
+    margin: 0 3px;
+    padding: 5px;
   }
 }

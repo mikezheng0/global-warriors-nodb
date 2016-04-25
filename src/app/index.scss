@@ -77,7 +77,6 @@ body {
 md-toolbar.md-default-theme {
   background-color: black;
 }
-
 section.jumbotron {
   margin-bottom: 30px;
   padding: 1px 30px;
@@ -99,223 +98,218 @@ section.jumbotron {
     }
   }
 }
-
-  .main-content {
-
-    color: white;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 125px;
-    .fight-card {
-      margin: 0;
-      .versus-logo {
+.main-content {
+  color: white;
+  max-width: 1200px;
+  margin: 125px auto 0;
+  .fight-card {
+    margin: 0;
+    .versus-logo {
+      p:first-of-type {
+        margin-top: 0;
+        font-size: 175px;
+        margin-bottom: -55px;
+      }
+      p {
+        font-size: 100px;
+      }
+      @media #{$xs-size} {
         p:first-of-type {
-          margin-top: 60px;
-          font-size: 100px;
+          margin-bottom: -12px;
+          font-size: 50px;
+        }
+        p {
+          font-size: 25px;
+        }
+        .left-content {
+          font-size: 10px;
+          line-height: normal;
+        }
+        .right-content {
+          font-size: 10px;
+          line-height: normal;
+        }
+        .middle-content {
+          font-size: 10px;
+          line-height: normal;
+        }
+      }
+      @media #{$sm-size} {
+        p:first-of-type {
+          margin-bottom: -30px;
+          font-size: 110px;
+        }
+        p {
+          font-size: 60px;
+        }
+        .left-content {
+          font-size: 14px;
+        }
+        .right-content {
+          font-size: 14px;
+        }
+        .middle-content {
+          font-size: 12px;
+        }
+      }
+      @media #{$md-size} {
+        p:first-of-type {
+          margin-top: 0;
+          font-size: 175px;
           margin-bottom: -55px;
         }
         p {
           font-size: 100px;
         }
-        @media #{$xs-size} {
-          p:first-of-type {
-            margin-bottom: -12px;
-            font-size: 25px;
-          }
-          p {
-            font-size: 25px;
-          }
-          .left-content {
-            font-size: 10px;
-            line-height: normal;
-          }
-          .right-content {
-            font-size: 10px;
-            line-height: normal;
-          }
-          .middle-content {
-            font-size: 10px;
-            line-height: normal;
-          }
-        }
-        @media #{$sm-size} {
-          p:first-of-type {
-            margin-bottom: -30px;
-            font-size: 60px;
-          }
-          p {
-            font-size: 60px;
-          }
-          .left-content {
-            font-size: 14px;
-          }
-          .right-content {
-            font-size: 14px;
-          }
-          .middle-content {
-            font-size: 12px;
-          }
-        }
-        @media #{$md-size} {
-          p:first-of-type {
-            margin-top: 60px;
-            font-size: 100px;
-            margin-bottom: -55px;
-          }
-          p {
-            font-size: 100px;
-          }
-        }
-      }
-    }
-    .versus-logo {
-      width: 90%;
-      .left-content {
-        text-align: right;
-        font-size: 16px;
-      }
-      .right-content {
-        text-align: left;
-        font-size: 16px;
-      }
-      .middle-content {
-        color: $contrast-text;
-        text-align: center;
-        font-size: 13px;
-      }
-      p {
-        margin: 0;
-        font-weight: 700;
-        text-align: center;
       }
     }
   }
-  md-grid-list {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  .md-headline {
-    font-weight: 700;
-  }
-  .md-title {
-    font-weight: 400;
-  }
-  .grey {
-    background-color: grey;
-  }
-  md-grid-list {
-    margin: 40px auto;
-    max-width: 1200px;
-  }
-  img:not(.night-logo) {}
-  md-grid-tile {
-    @include transition( all 400ms ease-out 50ms);
-  }
-  .full-width {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-  }
-  .half-width {
-    width: 50%;
-    padding: 0;
-    position: relative;
-    margin-right: 50%;
-  }
-  .fill-box {
-    width: 100%;
-    padding: 0;
-    position: relative;
-    margin: 0;
-
-  }
-  .fill-box:hover {
-    @include box-shadow(0, 0, 20px, rgba(255, 255, 255, 0.19));
-  }
-  .img-tile {
-    background: url('../assets/images/global-card-img.jpg');
-    background-size: auto 100%;
-  }
-  .img-tile:hover {
-    @include box-shadow(0, 0, 20px, rgba(255, 255, 255, 0.19));
-  }
-  //remove padding
-  md-list-item .md-no-style,
-  md-list-item.md-no-proxy {
-    padding: 0;
-  }
-  .match-info figure {
-    background: $content-background-color;
-    flex-direction: column;
-    h1 {
-      color: $content-color;
-      margin: 16px;
+  .versus-logo {
+    width: 90%;
+    .left-content {
+      text-align: right;
+      font-size: 16px;
+    }
+    .right-content {
+      text-align: left;
+      font-size: 16px;
+    }
+    .middle-content {
+      color: $contrast-text;
+      text-align: center;
+      font-size: 13px;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
       text-align: center;
     }
-    md-content {
-      background-color: transparent;
-      color: $content-color;
-    }
   }
-  .fighter-info figure {
-    background: $content-background-color;
-    flex-direction: column;
-    padding: 5%;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      color: $content-color;
-      text-align: left;
-    }
-    md-content {
-      background-color: transparent;
-      color: $content-color;
-    }
+}
+md-grid-list {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.md-headline {
+  font-weight: 700;
+}
+.md-title {
+  font-weight: 400;
+}
+.grey {
+  background-color: grey;
+}
+md-grid-list {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+img:not(.night-logo) {}
+md-grid-tile {
+  @include transition( all 400ms ease-out 50ms);
+}
+.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.half-width {
+  width: 50%;
+  padding: 0;
+  position: relative;
+  margin-right: 50%;
+}
+.fill-box {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+.fill-box:hover {
+  @include box-shadow(0, 0, 20px, rgba(255, 255, 255, 0.19));
+}
+.img-tile {
+  background: url('../assets/images/global-card-img.jpg');
+
+  background-size: cover;
+}
+.img-tile:hover {
+  @include box-shadow(0, 0, 20px, rgba(255, 255, 255, 0.19));
+}
+//remove padding
+md-list-item .md-no-style,
+md-list-item.md-no-proxy {
+  padding: 0;
+}
+.match-info figure {
+  background: $content-background-color;
+  flex-direction: column;
+  h1 {
+    color: $content-color;
+    margin: 16px;
+    text-align: center;
   }
-  //figther cards
-  .fighter-card {
-    md-card {
-      height: 240px;
-      background-color: $content-background-color;
-      color: $content-color;
-      .md-subhead {
-        color: $content-color;
-      }
-      md-card-content {
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-    }
-    .right-card {
-      text-align: right;
-    }
-    .left-card {
-      md-divider {
-        margin-left: 0;
-        margin-right: 80px;
-      }
-    }
-    .vs-symbol {
-      color: $content-color;
-      font-weight: bold;
-      font-size: 60px;
-      margin: auto;
-    }
+  md-content {
+    background-color: transparent;
+    color: $content-color;
+  }
+}
+.fighter-info figure {
+  background: $content-background-color;
+  flex-direction: column;
+  padding: 5%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $content-color;
+    text-align: left;
+  }
+  md-content {
+    background-color: transparent;
+    color: $content-color;
+  }
+}
+//figther cards
+.fighter-card {
+  md-card {
+    height: 240px;
+    background-color: $content-background-color;
+    color: $content-color;
     .md-subhead {
-      padding-top: 6px;
-      padding-bottom: 6px;
+      color: $content-color;
     }
+    md-card-content {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+  .right-card {
+    text-align: right;
+  }
+  .left-card {
     md-divider {
-      border-top-color: rgba(255, 255, 255, 0.36);
+      margin-left: 0;
+      margin-right: 80px;
     }
-    max-width: 1200px;
+  }
+  .vs-symbol {
+    color: $content-color;
+    font-weight: bold;
+    font-size: 60px;
     margin: auto;
   }
-
-
+  .md-subhead {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  md-divider {
+    border-top-color: rgba(255, 255, 255, 0.36);
+  }
+  max-width: 1200px;
+  margin: auto;
+}
 .media-page {
   .img-tile {
     border: 1px white solid;
