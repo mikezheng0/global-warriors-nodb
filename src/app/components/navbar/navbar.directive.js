@@ -22,11 +22,23 @@
     return directive;
 
     function navbarResizer(scope, element, attrs) {
+      angular.element($window).bind("scroll", function() {
+          if (!scope.scrollPosition) {
+              scope.scrollPosition = 0
+          }
 
+          if (this.pageYOffset > scope.scrollPosition) {
+              scope.boolChangeClass = true;
+          } else {
+              scope.boolChangeClass = false;
+          }
+          scope.scrollPosition = this.pageYOffset;
+          scope.$apply();
+      });
     }
     /** @ngInject */
     function NavbarController($mdSidenav, $scope) {
-    
+
       var vm = this;
 
       vm.openRightMenu = openRightMenu;
