@@ -39,6 +39,11 @@
         'name':'Kamikaze',
         'image':'assets/images/sponsors/kamikaze.png',
         'url':'6\'2\"'
+      },{
+        'id': 6,
+        'name':'Street Soldier',
+        'image':'assets/images/sponsors/street-solider.png',
+        'url':'6\'2\"'
       }
     ];
 
