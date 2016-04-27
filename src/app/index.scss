@@ -55,10 +55,13 @@ $contrast-text: #b2b2b2;
 }
 html {
   font-family: 'Oswald', sans-serif;
+  background-color: #0E0909;
 }
 body {
-  background-color: #222222;
+  background-color: #0E0909;
   background-image: url(background-test.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   height: initial;
 }
 .layout-fill {
@@ -104,6 +107,11 @@ section.jumbotron {
   margin: 125px auto 0;
   .fight-card {
     margin: 0;
+    .left-panel-image{
+      width: 120%;
+      margin-left: 20%;
+      margin-top: 25%;
+    }
     .versus-logo {
       p:first-of-type {
         margin-top: 0;
@@ -115,22 +123,22 @@ section.jumbotron {
       }
       @media #{$xs-size} {
         p:first-of-type {
-          margin-bottom: -12px;
-          font-size: 50px;
+          margin-bottom: -30px;
+          font-size: 110px;
         }
         p {
-          font-size: 25px;
+          font-size: 60px;
         }
         .left-content {
-          font-size: 10px;
+          font-size: 14px;
           line-height: normal;
         }
         .right-content {
-          font-size: 10px;
+          font-size: 14px;
           line-height: normal;
         }
         .middle-content {
-          font-size: 10px;
+          font-size: 12px;
           line-height: normal;
         }
       }
@@ -230,6 +238,7 @@ md-grid-tile {
 }
 .fill-box {
   width: 100%;
+  height:100%;
   padding: 0;
   position: relative;
   margin: 0;

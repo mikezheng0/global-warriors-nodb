@@ -3,10 +3,11 @@
 
       <img class="night-logo" src="assets/images/night-of-champions-logo-png.png" alt="night of champions logo" width="100%"/>
       <count-down></count-down>
-      <md-grid-list class="align-center fight-card" md-cols="3" md-row="2" md-row-height="300px" md-row-height-sm="200px" md-row-height-xs="150px" md-gutter="0px" md-gutter-gt-sm="0px">
-        <md-grid-tile style="background: url(assets/images/will-romero.jpg); background-size:cover;"  md-rowspan="2" md-colspan="1">
+      <md-grid-list class="align-center fight-card" md-cols="3" md-row="2" md-row-sm="3" md-cols-sm="1"  md-row-xs="3" md-cols-xs="1" md-row-height="300px" md-row-height-sm="200px" md-row-height-xs="150px" md-gutter="0px" md-gutter-gt-sm="0px">
+        <md-grid-tile hide-xs hide-sm style="" md-rowspan-gt-sm="2" md-colspan-gt-sm="1" md-rowspan="1" md-colspan="1">
+          <img class="left-panel-image" src="assets/images/josh-hill-panel.png" >
         </md-grid-tile>
-        <md-grid-tile class="" md-rowspan="2" md-colspan="1" >
+        <md-grid-tile class="" md-rowspan-gt-sm="2" md-colspan-gt-sm="1" md-rowspan="1" md-colspan="1">
           <div class="versus-logo" layout="column">
             <p>HILL</p>
             <p>KAMERY</p>
@@ -18,25 +19,24 @@
               <span class="md-headline middle-content" flex="20">VS</span>
               <span class="md-headline right-content" flex="40">Brookins</span>
             </div>
-            <md-divider></md-divider>
             <div layout="row">
               <span class="md-headline left-content" flex="40">Ricci</span>
               <span class="md-headline middle-content" flex="20">VS</span>
               <span class="md-headline right-content" flex="40">Prepolic</span>
             </div>
-            <md-divider></md-divider>
-            <div layout="row">
+            <div layout="row" >
               <span class="md-headline left-content" flex="40">Hale</span>
               <span class="md-headline middle-content" flex="20">VS</span>
               <span class="md-headline right-content" flex="40">Petahtehoose</span>
             </div>
             <div layout="row">
-              <md-button class="md-raised" flex="50">Fight Cards</md-button>
+              <md-button class="md-raised" ui-sref="events" flex="50">Fight Cards</md-button>
               <md-button class="md-raised" flex="50">Get Tickets</md-button>
             </div>
           </div>
         </md-grid-tile>
-        <md-grid-tile style="background: url(assets/images/josh-hill.jpg); background-size:cover;" md-rowspan="2" md-colspan="1">
+        <md-grid-tile hide-xs hide-sm style="background: url(assets/images/bill-kamery-panel.png); background-size:cover;" md-rowspan-gt-sm="2" md-colspan-gt-sm="1" md-rowspan="1" md-colspan="1">
+
         </md-grid-tile>
       </md-grid-list>
 
